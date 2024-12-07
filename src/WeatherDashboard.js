@@ -14,6 +14,7 @@ const WeatherDashboard = () => {
         const response = await fetch('/api/v1/smog');
         
         if (!response.ok) {
+            console.log(response);
           throw new Error('Network response was not ok');
         }
         
