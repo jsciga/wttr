@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wttr/static/css/main.24249930.css",
+    "main.js": "/wttr/static/js/main.e227e2b6.js",
+    "index.html": "/wttr/index.html",
+    "main.24249930.css.map": "/wttr/static/css/main.24249930.css.map",
+    "main.e227e2b6.js.map": "/wttr/static/js/main.e227e2b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24249930.css",
+    "static/js/main.e227e2b6.js"
+  ]
+}
