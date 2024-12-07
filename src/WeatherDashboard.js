@@ -9,9 +9,12 @@ const WeatherDashboard = () => {
     const fetchWeatherData = async () => {
       try {
         setIsLoading(true);
-        // Replace with your actual API endpoint
-        //const response = await fetch('https://public-esa.ose.gov.pl/api/v1/smog');
-        const response = await fetch('/api/v1/smog');
+        const response = await fetch('https://api.cors.lol/?url=https://public-esa.ose.gov.pl/api/v1/smog');
+        
+
+        //For Local
+        //const response = await fetch('/api/v1/smog');
+    
         
         if (!response.ok) {
             console.log(response);
@@ -20,7 +23,6 @@ const WeatherDashboard = () => {
         
         const data = await response.json();
         console.log(data)
-        // Assuming the first item in smog_data array
         const targetStation = data.smog_data.find(
           (node) => node.school.post_code === '59-600' 
         );
